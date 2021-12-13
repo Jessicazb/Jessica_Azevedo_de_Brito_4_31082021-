@@ -311,7 +311,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    height: 40px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -376,12 +376,17 @@ a:hover {
     left: 150px;
     bottom: 30px;
 }
+/*section */
+.image-resize-mode{
+    width: 100px;
+}
 
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
         top: 50%;
         right: 20px;
+        list-style: none;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -751,7 +756,7 @@ h3 {
 }
 
 .med-width-whitespace {
-    max-width: 800px;
+    max-width: 100%;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
@@ -874,11 +879,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.png");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/image-de-presentation-1200.png");
 }
 
 @media (max-width: 1024px) {
@@ -893,6 +898,23 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+    .nav-bar-contact{
+        position: relative;
+        left: 20px;
+    }
+    .text-center-h1-pg-contact{
+        margin-left: 280px;
+    }
+    .p-size-pg-contact{
+        margin-right: 150px;
+    }
+    .col-sm-6-2{
+        margin-left: 100px;
+    }
+    .col-sm-6-3{
+        margin-left: 100px;
+    }
+
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
@@ -902,6 +924,31 @@ h4 {
     .nav-center.navbar .nav {
         max-width: 100%
     }
+    .nav-bar-contact{
+        position: relative;
+        left: -30px;
+        
+    }
+    .text-center-h1-pg-contact{
+        margin-left: 150px;
+    }
+    .p-size-pg-contact{
+        margin-right: 100px;
+    }
+    .col-sm-6-2{
+        margin-left: 0px;
+        width: 90%;
+    }
+    .col-sm-6-3{
+        margin-left: 0px;
+    }
+    .text-center-footer-page-2-mobile{
+        margin-left: 170px;
+    }
+    .row-no-gutters{
+        margin-left: 10px;
+    }
+
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -969,18 +1016,36 @@ h4 {
     }
     .navbar .nav {
         padding-top: 0;
-        border-top: 1px solid #A0522D;
-        width: 20%;
         float: none!important;
-        position: relative;
-        right: 140px;
-        top: 30px;  
     }
     .navbar.row {
         margin-left: 0;
         margin-right: 0;
     }
-   
+    .site-navigation {
+        position: inherit;
+        transform: none;
+        -webkit-transform: none;
+        -ms-transform: none;
+    }
+    .site-navigation-mobile{
+        list-style: none;
+        position: relative;
+        top: 40px;
+        right: 10px;
+        border-top: 1px solid #A0522D;
+        width: 20%;
+        height: 10px;
+        padding-top: 5px;
+    }
+    .nav > li {
+        margin-top: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        background: rgba(0, 0, 0, .05);
+        text-align: left;
+        padding-left: 15px;
+        width: 100%;
+    }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
     }
@@ -1101,8 +1166,9 @@ h4 {
     }
     .p-size-pg-contact{
         font-size: 15px;
+        margin-right: 20px;
         position: relative;
-        left: 50px;
+        left: 15px;
     }
     .voffset {
         margin-top: 5px;
@@ -1139,8 +1205,8 @@ h4 {
     }
     .display-flex-footer-pg-contact{
         position: relative;
-        right: 120px;
-        width: 90%;
+        right: 70px;
+        
     }
     .row-no-gutters{
         display: flex;
@@ -1171,6 +1237,9 @@ h4 {
     }
     .p-size-pg-contact{
         font-size: 14px;
+        margin-right: 10px;
+        position: relative;
+        left: 10px;
     }
     .affichage-icon-mobile{
        margin-left: 20px;
@@ -1185,9 +1254,10 @@ h4 {
     }
     .text-center-h1-pg-contact{
         font-size: 30px;
+        margin-left: 10px;
     }
     .p-size-pg-contact{
-        margin-left: 20px;
+        margin-left: 10px;
         font-size: 13px;
     }
     .affichage-icon-mobile{
@@ -1197,4 +1267,3 @@ h4 {
         margin-left: 10px;
     }
 }
-
