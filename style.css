@@ -571,6 +571,24 @@ h1,h4 {
         background-attachment: scroll;
     }
 }
+@media (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .b-parallax {
+        background-attachment: scroll;
+    }
+    .page-container,
+    #hero-bloc {
+        overflow-x: hidden;
+        position: relative;
+    }
+    .bloc-group,
+    .bloc-group .bloc {
+        display: block;
+        width: 100%;
+    }
+}
 @media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
