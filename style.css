@@ -6,10 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-a,
-button {
-    transition: all .3s ease-in-out;
-    outline: none!important;
+a{
     text-decoration: none;
 }
 a:hover {
@@ -126,24 +123,19 @@ a:hover {
 .navbar-brand img[src$=svg] {
     min-width: 100px;
 }
-.nav > li {
+.site-navigation > li {
     float: left;
     margin-top: 4px;
     font-size: 16px;
     list-style: none;
 }
-.navbar-toggle {
-    margin: 10px 10px 0 0;
-    border: 0px;
-}
-.navbar-toggle .icon-bar {   /* icon page accueil mobile */
-    background-color: rgba(0, 0, 0, .5);
-    width: 26px;
-}
 .nav-bar-contact{
-    position: relative;
-    left: 150px;
-    bottom: 30px;
+    position: absolute;
+    left: 1100px;
+    bottom: 10px;
+}
+.nav-bar-contact li{
+    list-style: none;
 }
 /*section */
 .image-resize-mode{
@@ -189,9 +181,6 @@ a:hover {
 .btn {
     margin: 0 5px 5px 0;
     cursor: pointer;
-}
-button {
-    outline: none!important;
 }
 .btn-rd {
     border-radius: 40px;
@@ -511,8 +500,8 @@ h1,h4 {
         padding-right: 20px;
     }
     .nav-bar-contact{
-        position: relative;
-        left: 20px;
+        position: absolute;
+        left: 900px;
     }
     .text-center-h1-pg-contact{
         margin-left: 280px;
@@ -536,8 +525,8 @@ h1,h4 {
         max-width: 100%
     }
     .nav-bar-contact{
-        position: relative;
-        left: -30px;   
+        position: absolute;
+        left: 600px;
     }
     .text-center-h1-pg-contact{
         position: relative;
@@ -605,7 +594,7 @@ h1,h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
-    .navbar .nav {
+    .navbar{
         padding-top: 0;
         float: none!important;
     }
@@ -614,20 +603,17 @@ h1,h4 {
         margin-right: 0;
     }
     .site-navigation {
-        position: inherit;
-        transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
-    }
-    .site-navigation-mobile{
-        list-style: none;
+        margin-left: 270px;
         position: relative;
-        top: 40px;
-        right: 10px;
-        border-top: 1px solid #A0522D;
-        width: 20%;
-        height: 10px;
-        padding-top: 5px;
+        bottom: 20px;
+    }
+    .navbar-header-contact{
+        height: 80px;
+    }
+    .nav-bar-contact{ 
+        position: absolute;
+        left: 270px;
+        bottom: 10px;
     }
     .nav > li {
         margin-top: 0;
@@ -681,6 +667,7 @@ h1,h4 {
     .bloc-sm,.bloc-md {
         padding-left: 0;
         padding-right: 0;
+        padding-bottom: 0;
     }
     .a-block {
         padding: 0 10px;
@@ -816,8 +803,22 @@ h1,h4 {
     .text-center-footer-page-2-mobile{
         margin-left: 25px;
     }
+    .site-navigation {
+        margin-left: 250px;
+    }
+    .nav-bar-contact{
+        position: absolute;
+        left: 240px;
+    }
 }
 @media (max-width:320px){
+    .site-navigation {
+        margin-left: 200px;
+    }
+    .nav-bar-contact{
+        position: absolute;
+        left: 200px;
+    }
     h2{
         font-size: 16px;
     }
