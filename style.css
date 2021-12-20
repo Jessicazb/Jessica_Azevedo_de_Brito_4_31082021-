@@ -213,9 +213,6 @@ button {
 input{
     height: 30px;
 }
-textarea{
-    width: 100%;
-}
 .col-sm-6-2{
     margin-left: 200px;
     line-height: 45px;
@@ -460,7 +457,7 @@ h1,h4 {
     color: white!important;
 }
 .text-center-h1-pg-contact {
-    margin-left: 280px;
+    margin-left: 260px;
     font-size: 50px;
     position: relative;
 }
@@ -528,6 +525,10 @@ h1,h4 {
     .col-sm-6-3{
         margin-left: 100px;
     }
+    .text-center-footer-page-2-mobile{
+        position: relative;
+        right: 18px;
+    }
 }
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
@@ -555,7 +556,7 @@ h1,h4 {
         margin-left: 30px;
     }
     .text-center-footer-page-2-mobile{
-        margin-left: 180px;
+        margin-left: 190px;
     }
     .display-flex-footer-pg-contact{
         margin-right: 170px;
@@ -591,6 +592,14 @@ h1,h4 {
     }
 }
 @media (max-width: 767px) {
+    html,body 
+        {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -766,8 +775,11 @@ h1,h4 {
     .display-flex-footer-pg-contact{
         margin-right: 100px;
         position: relative;
-        left: 15px;
-        width: 90%;   
+        left: 10px;
+        width: 100%;   
+    }
+    .text-center-footer-page-2-mobile{
+        margin-left: 60px;
     }
     .close-lightbox {
         display: inline-block;
@@ -798,10 +810,10 @@ h1,h4 {
     }
     .display-flex-footer-pg-contact{
         position: relative;
-        right: 70px;
+        left: -2px;
     }
     .text-center-footer-page-2-mobile{
-        margin-left: 25px;
+        margin-left: 50px;
     }
 }
 @media (max-width:320px){
@@ -820,6 +832,6 @@ h1,h4 {
         right: 80px;
     }
     .text-center-footer-page-2-mobile{
-        margin-left: 10px;
+        margin-left: 30px;
     }
 }
